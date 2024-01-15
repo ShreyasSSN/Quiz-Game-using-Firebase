@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quiz Game</string>
+    <string name="quiz_game">Quiz Game</string>
+    <string name="splash_image">Splash Image</string>
+    <string name="login_image">login Image</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="account">Don\'t you have any account? <font color="#FF5C39C6">
+        <b><u><i>Sign Up</i></u></b></font> </string>
+    <string name="forgot_password"><u>I forgot my password</u></string>
+    <string name="forgot_password_image">Forgot Password Image</string>
+</resources>

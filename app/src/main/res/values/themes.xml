@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizGame" parent="Theme.Material3.DayNight">
+        <!-- Primary Color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary Color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar Color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppThemeSplash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Color. -->
+        <item name="colorPrimary">@color/Matisse</item>
+        <item name="colorPrimaryVariant">@color/Matisse</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary Color. -->
+        <item name="colorSecondary">@color/Matisse</item>
+        <item name="colorSecondaryVariant">@color/Matisse</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar Color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SignUpTheme" parent="Theme.Material3.DayNight">
+        <!-- Primary Color. -->
+        <item name="colorPrimary">@color/Matisse</item>
+        <item name="colorPrimaryVariant">@color/Matisse</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary Color. -->
+        <item name="colorSecondary">@color/Matisse</item>
+        <item name="colorSecondaryVariant">@color/Matisse</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar Color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.QuizGame" parent="Base.Theme.QuizGame" />
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Matisse"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="60"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Correct Answer"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wrong Answer"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewWrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutInfo">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Question"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewOptionA"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Option A"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewOptionB"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Option B"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewOptionC"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Option C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewOptionD"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Option D"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="FINISH"
+            android:textColor="@color/Matisse"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="NEXT"
+            android:textColor="@color/Matisse"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarQuiz"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
